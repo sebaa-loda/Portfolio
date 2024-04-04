@@ -1,14 +1,15 @@
+import { Typography} from '@mui/material'
 
 
 export const Skills = () => {
   return (
     <div>
-      <h2>Skills</h2>
-      <h4>Lenguajes de programación</h4>
+      <Typography variant='h2'>Skills</Typography>
+      <Typography variant='h4'>Lenguajes de programación</Typography>
 
-      <h4>Frameworks y librerías</h4>
+      <Typography variant='h4'>Frameworks y librerías</Typography>
 
-      <h4>Estoy aprendiendo en Udemy:</h4>
+      <Typography variant='h4'>Estoy aprendiendo en Udemy:</Typography>
     </div>
   )
 }

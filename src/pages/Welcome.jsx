@@ -1,11 +1,11 @@
-
+import { Typography } from "@mui/material";
 
 export const Welcome = () => {
   return (
     <div>
-      <h1>Sebastián Patricio Loda</h1>
-      <h3>Bienvenidos a mi porfolio</h3>
-      <h4>Si quieres ponerte en contacto conmigo escribeme a: </h4>
+      <Typography variant="h1">Sebastián Patricio Loda</Typography>
+      <Typography variant="h3">Bienvenidos a mi porfolio</Typography>
+      <Typography variant="h4">Si quieres ponerte en contacto conmigo escribeme a: </Typography>
     </div>
   )
 }

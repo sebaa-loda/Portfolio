@@ -1,13 +1,17 @@
-
+import { MailOutline, WhatsApp, LinkedIn } from "@mui/icons-material";
+import { Typography } from "@mui/material";
 
 export const Contact = () => {
   return (
     <div>
-      <h2>Contactame!</h2>
+      <Typography variant="h2">Contactame!</Typography>
 
-      <p>Email: </p>
-      <p>Whatsapp: </p>
-      <p>LinkedIn: </p>
+      <Typography variant="p">Email: </Typography>
+      <MailOutline color="secondary" />
+      <Typography variant="p">Whatsapp: </Typography>
+      <WhatsApp color="secondary" />
+      <Typography variant="p">LinkedIn: </Typography>
+      <LinkedIn color="secondary" />
     </div>
-  )
-}
+  );
+};

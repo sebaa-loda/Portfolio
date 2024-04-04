@@ -1,3 +1,5 @@
+import { Typography} from '@mui/material'
+
 import {
   About,
   Welcome,
@@ -5,12 +7,12 @@ import {
   Contact,
   Proyects,
   Education,
-} from "./pages";
+} from ".";
 
 export const Home = () => {
   return (
     <div>
-      <h1>Bienvenidos!</h1>
+      <Typography variant='h1'>Bienvenidos!</Typography>
 
       <Welcome />
       <About />
