@@ -1,7 +1,6 @@
-import { Typography} from '@mui/material'
+import { Typography,Grid} from '@mui/material'
 
 import {
-  About,
   Welcome,
   Skills,
   Contact,
@@ -11,15 +10,21 @@ import {
 
 export const Home = () => {
   return (
-    <div>
-      <Typography variant='h1'>Bienvenidos!</Typography>
+    <Grid
+    direction='column'
+    sx={{backgroundColor:'primary.main'}}
+    
+    >
+      <Typography 
+      variant='h1'
+      fontSize='50px'
+      >Bienvenidos!</Typography>
 
       <Welcome />
-      <About />
       <Proyects/>
       <Education/>
       <Skills/>
       <Contact/>
-    </div>
+    </Grid>
   );
 };
