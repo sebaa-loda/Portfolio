@@ -5,16 +5,12 @@ export const Welcome = () => {
   return (
     <Grid
     container
-    sx={{width:'100vh'}}
+    sx={{height:'100vh'}}
     >
       <Typography 
       variant="h1"
       fontSize='50px' 
       >Sebastián Patricio Loda</Typography>
-      <Typography 
-      variant="h3"
-      fontSize='30px'
-      >Bienvenidos a mi porfolio</Typography>
       <Typography 
       variant="h4"
       fontSize='20px'

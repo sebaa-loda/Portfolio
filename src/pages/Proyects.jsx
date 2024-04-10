@@ -1,10 +1,13 @@
-import { Typography} from '@mui/material'
+import { Typography,Grid} from '@mui/material'
 
 
 export const Proyects = () => {
   return (
-    <div>
+    <Grid
+    container
+    sx={{height:'100vh'}}
+    >
       <Typography variant='h3'>Proyectos</Typography>
-    </div>
+    </Grid>
   )
 }
