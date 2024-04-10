@@ -1,5 +1,3 @@
-import { Typography,Grid} from '@mui/material'
-
 import {
   Welcome,
   Skills,
@@ -8,6 +6,8 @@ import {
   Education,
 } from ".";
 
+import { Navbar } from "../components/Navbar";
+
 export const Home = () => {
   return (
     <Grid
@@ -15,6 +15,7 @@ export const Home = () => {
     sx={{backgroundColor:'primary.main'}}
     
     >
+      <Navbar />
       <Welcome />
       <Proyects/>
       <Education/>
