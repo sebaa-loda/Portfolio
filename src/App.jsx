@@ -1,7 +1,7 @@
-import {Home} from './pages'
+import { AppRouter } from './router/AppRouter'
 
 export const App = () => {
   return (
-      <Home/>
+      <AppRouter/>
   )
 }
