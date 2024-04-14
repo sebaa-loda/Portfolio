@@ -1,16 +1,30 @@
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
+import "../scss/pages/layout/_layout.scss";
+import Typewriter from "typewriter-effect";
 
 export const Layout = () => {
+  const navigate = useNavigate();
 
-  const navigate = useNavigate()
-
-  setTimeout(() => {
-    navigate('/home')
-  }, 5000);
-
+   setTimeout(() => {
+      navigate('/home')
+    }, 10000);
 
   return (
-    <h1>Hola, estan por ver mi portfolio</h1>
-  )
-}
+    <div className="layout">
+      <div className="text">
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+
+              .typeString("Bienvenidos!")
+
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString("A continuación mi Portfolio")
+              .start();
+          }}
+        />
+      </div>
+    </div>
+  );
+};
