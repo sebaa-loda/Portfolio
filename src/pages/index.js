@@ -1,6 +1,6 @@
 export * from "./About"
 export * from "./Contact"
-export * from "./Education"
 export * from "./Proyects"
 export * from "./Skills"
 export * from "./Welcome"
+export * from './Home'
