@@ -3,11 +3,16 @@
 
 .contacto {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #0f171b;
   margin-top: 3rem;
   width: 100%;
   box-shadow: 0px 0px 60px #1f4c65;
+  gap: 10rem;
+
+  p {
+    color: rgba(236, 238, 239, 0.5764705882);
+  }
 
   a {
     color: rgb(15, 53, 56);

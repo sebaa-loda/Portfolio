@@ -9,6 +9,16 @@ export const Proyects = () => {
       <h2>Proyectos</h2>
 
       <div className="proyectos__container">
+        <div className="tecnologias">
+          <h4>Tecnologías utilizadas</h4>
+          <ul>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Express</li>
+            <li>Node</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
         <div className="proyecto">
           <h4>PokeApi</h4>
           <p>

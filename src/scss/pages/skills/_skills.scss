@@ -4,14 +4,15 @@
 .skills {
   background-color: #0f171b;
   border-radius: 1.5rem;
-  width: 100rem;
+  width: 50rem;
   margin-top: 3rem;
   text-align: center;
   box-shadow: 0px 0px 60px #1f4c65;
 
-  h2{
+  h2 {
     font-size: 4rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   &__iconos {
@@ -19,9 +20,178 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 5rem;
-    gap: 2rem;
+    gap: 3rem;
+    padding: 2rem
   }
-  @include m.desktop {}
+
+  @include m.desktop {
+    width: 100rem;
+    padding: 2.5rem 5rem;
+
+    &__iconos{
+      gap: 6rem;
+    }
+  }
 }
 
+.icono {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__html {
+    transition-property: transform;
+    transition-duration: 600ms;
+    height: 8rem;
+    width: 8rem;
+
+    &:hover {
+      fill: #e34c26;
+      transform: scale(1.3);
+    }
+  }
+
+  &__css {
+    transition-property: transform;
+    transition-duration: 600ms;
+    height: 7rem;
+    width: 7rem;
+
+    &:hover {
+      fill: #264de4;
+      transform: scale(1.3);
+    }
+  }
+
+  &__sass {
+    transition-property: transform;
+    transition-duration: 600ms;
+    height: 8rem;
+    width: 8rem;
+
+    &:hover {
+      fill: #cc6699;
+      transform: scale(1.3);
+    }
+  }
+
+  &__js {
+    transition-property: transform;
+    transition-duration: 600ms;
+    height: 8rem;
+    width: 8rem;
+
+    &:hover {
+      fill: #f0db4f;
+      transform: scale(1.3);
+    }
+  }
+
+  &__ts {
+    transition-property: transform;
+    transition-duration: 600ms;
+    height: 8rem;
+    width: 8rem;
+
+    &:hover {
+      fill: #007acc;
+      transform: scale(1.3);
+    }
+  }
+
+  &__react {
+    transition-property: transform;
+    transition-duration: 600ms;
+    height: 8rem;
+    width: 8rem;
+
+    &:hover {
+      fill: #61DBFB;
+      transform: scale(1.3);
+    }
+  }
+
+  &__redux {
+    transition-property: transform;
+    transition-duration: 600ms;
+    height: 8rem;
+    width: 8rem;
+
+    &:hover {
+      fill: #764abc;
+      transform: scale(1.3);
+    }
+  }
+
+  &__exp {
+    transition-property: transform;
+    transition-duration: 600ms;
+    height: 8rem;
+    width: 8rem;
+
+    &:hover {
+      fill: #303030;
+      transform: scale(1.3);
+    }
+  }
+
+  &__node {
+    transition-property: transform;
+    transition-duration: 600ms;
+    height: 8rem;
+    width: 8rem;
+
+    &:hover {
+      fill: #68a063;
+      transform: scale(1.3);
+    }
+  }
+
+  &__post {
+    transition-property: transform;
+    transition-duration: 600ms;
+    height: 8rem;
+    width: 8rem;
+
+    &:hover {
+      fill: #0064a5;
+      transform: scale(1.3);
+    }
+  }
+
+  &__mongo {
+    transition-property: transform;
+    transition-duration: 600ms;
+    height: 8rem;
+    width: 8rem;
+
+    &:hover {
+      fill: #4DB33D;
+      transform: scale(1.3);
+    }
+  }
+
+  span {
+    margin-top: 1.2rem;
+  }
+
+  @include m.desktop{
+    width: 15rem;
+    height: 15rem;
+
+    &__html,&__sass,&__js,&__ts,&__react,&__redux,&__exp,&__node,&__post,&__mongo{
+      height: 15rem;
+      width: 15rem;
+    }
+    
+    &__css{
+      height: 10rem;
+      width: 10rem;
+    }
+
+    span{
+      font-size: 2.5rem;
+    }
+  }
+}
