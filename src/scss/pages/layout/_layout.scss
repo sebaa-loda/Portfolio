@@ -2,17 +2,13 @@
 @use "../../base/mixins" as m;
 
 .layout{
-  background-color: v.$negro;
+  background-color: #171716;
   height: 100vh;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 5rem;
-
-  @include m.tablet{
-    font-size: 10rem;
-  }
 
   @include m.desktop{
     font-size: 15rem;

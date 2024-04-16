@@ -1,0 +1,27 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.skills {
+  background-color: #0f171b;
+  border-radius: 1.5rem;
+  width: 100rem;
+  margin-top: 3rem;
+  text-align: center;
+  box-shadow: 0px 0px 60px #1f4c65;
+
+  h2{
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  &__iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 5rem;
+    gap: 2rem;
+  }
+  @include m.desktop {}
+}
+

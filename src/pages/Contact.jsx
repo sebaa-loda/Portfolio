@@ -1,11 +1,11 @@
+import '../scss/pages/contact/_contact.scss'
+
 export const Contact = () => {
   return (
-    <div id="contacto">
-      <h3>Contactame!</h3>
-
+    <div id="contacto" className="contacto">
       <p>
         Email:
-        <a href="mailito:sebasmdq96@hotmail.com">sebasmdq96@hotmail.com</a>
+        <a href="mailto:sebasmdq96@hotmail.com"> sebasmdq96@hotmail.com</a>
       </p>
 
       <p>

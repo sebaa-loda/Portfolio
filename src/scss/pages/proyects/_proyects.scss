@@ -1,0 +1,14 @@
+@use "../../base/variables" as v;
+@use "../../base/mixins" as m;
+
+.proyectos {
+  @include m.desktop {
+    display: flex;
+    background-color: #0f171b;
+    border-radius: 1.5rem;
+    width: 100rem;
+    position: relative;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 60px #1f4c65;
+  }
+}

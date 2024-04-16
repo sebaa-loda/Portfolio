@@ -1,9 +1,54 @@
-
+import layoutPhoto from "../img/layout.png";
+import glamourPhoto from "../img/glamour.png";
+import cafePhoto from "../img/cafeteria.png";
+import '../scss/pages/proyects/_proyects.scss'
 
 export const Proyects = () => {
   return (
-    <div id="proyectos">
-      <h3>Proyectos</h3>
+    <div id="proyectos" className="proyectos">
+      <h2>Proyectos</h2>
+
+      <div className="proyectos__container">
+        <div className="proyecto">
+          <h4>PokeApi</h4>
+          <p>
+            Una SPA en donde consumo una API para mostrar Pokemons con sus
+            respectivas estadísticas desde su valor de vida o ataque hasta su
+            peso y altura. No solo se pueden filtrar pokemons según diferentes
+            tipos, sino que el usuario también puede crear pokemons con
+            distintas estadísticas y tipos a gusto.
+          </p>
+          <a href="https://github.com/sebaa-loda/pokemon-client">Código</a>
+          <img src={layoutPhoto} alt="imagen pokeapi" />
+        </div>
+
+        <div className="proyecto">
+          <h4>Glamour Glow</h4>
+          <p>
+            Una app de marketplace dedicada a la estética, conectando
+            proveedores y clientes. Cuenta con un sistema de pago integrado a
+            través de MercadoPago. La plataforma incluye tres roles distintos:
+            Clientes, Proveedores y Admin moderador. Además, los usuarios pueden
+            calificar a los proveedores y dejar reseñas para compartir sus
+            experiencias.
+          </p>
+          <a href="https://github.com/EderFornero/Glamour-Glow">Código</a>
+          <img src={glamourPhoto} alt="imagen glamour glow" />
+        </div>
+
+        <div className="proyecto">
+          <h4>Cafeteria Sass</h4>
+          <p>
+            Una página web estática sobre café usando HTML y Sass para ofrecer
+            una experiencia inmersiva. Presenta distintas secciones, desde
+            variedades y métodos de preparación hasta la historia del café.
+            Además, incluye una página de contacto para interactuar con los
+            visitantes.
+          </p>
+          <a href="https://github.com/sebaa-loda/Cafeteria-SASS">Código</a>
+          <img src={cafePhoto} alt="imagen cafeteria" />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};

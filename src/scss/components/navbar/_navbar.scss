@@ -1,45 +1,58 @@
 @use "../../base/variables" as v;
 @use "../../base/mixins" as m;
 
-.nav-principal{
+.nav-principal {
   display: flex;
+  position: sticky;
+  background-color: #171716;
+  top: 0;
+  z-index: 1000;
   flex-direction: column;
-  margin-top: 2rem;
-  @include m.tablet {
-    flex-direction: row;
-    gap: 1rem;
-    margin-top: 0;
-    justify-content: space-around;
-    padding: auto 15;
+  width: 100%;
+  padding: 1.5rem 0;
+  border-bottom: 0.2px solid v.$grisClaro;
 
+  @include m.desktop {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
   }
-  .btn-nav {
-    font-size: 1.2rem;
+}
+
+.btn-nav {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+
+  @include m.desktop {
+    font-size: 2rem;
     padding: 1rem 2.5rem;
-    border: none;
-    outline: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: rgb(14, 14, 26);
-    color: rgb(234, 234, 234);
-    font-weight: 700;
-    transition: 0.6s;
-    box-shadow: 0px 0px 60px #1f4c65;
-    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
   }
-  
-  .btn-nav:active {
+
+  &__text {
+    color: v.$grisClaro;
+  }
+
+  &:active {
     scale: 0.92;
   }
-  
-  .btn-nav:hover {
-    background: rgb(2,29,78);
+
+  &:hover {
+    background: rgb(2, 29, 78);
     background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
-    color: rgb(4, 4, 38);
+
   }
 
-
-
-
+  &:hover &__text {
+    color: rgb(4, 4, 38)
+  }
 }
