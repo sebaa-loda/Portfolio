@@ -7,7 +7,7 @@ export const Layout = () => {
 
    setTimeout(() => {
       navigate('/home')
-    }, 10000);
+    }, 3200);
 
   return (
     <div className="layout">
@@ -17,10 +17,7 @@ export const Layout = () => {
             typewriter
 
               .typeString("Bienvenidos!")
-
               .pauseFor(1000)
-              .deleteAll()
-              .typeString("A continuación mi Portfolio")
               .start();
           }}
         />

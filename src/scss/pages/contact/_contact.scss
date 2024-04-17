@@ -3,22 +3,57 @@
 
 .contacto {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #0f171b;
-  margin-top: 3rem;
-  width: 100%;
-  box-shadow: 0px 0px 60px #1f4c65;
-  gap: 10rem;
+  margin: 3rem 0 5rem 0; 
+  width: 50rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  padding-bottom: 2rem;
 
-  p {
+  h2{
+    margin-bottom: 1rem;
+  }
+
+  &__container{
+    p {
     color: rgba(236, 238, 239, 0.5764705882);
+    text-align: left;
+    padding: 0 0 0 10rem;
   }
 
   a {
-    color: rgb(15, 53, 56);
+    color:  rgba(39, 113, 150, 0.959);
   }
 
   a:hover {
-    color: white;
+    color: rgb(38, 135, 184);
+  }
+  }
+  
+
+  @include m.desktop{
+    width: 100%;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 0;
+
+    h2 {
+      font-size: 4.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    &__container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 1rem;
+
+      p{
+        font-size: 2rem;
+      }
+    }
   }
 }
