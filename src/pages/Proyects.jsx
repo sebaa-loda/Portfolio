@@ -5,7 +5,7 @@ import '../scss/pages/proyects/_proyects.scss'
 
 export const Proyects = () => {
   return (
-    <div id="proyectos" className="proyectos">
+    <div id="proyectos" className="proyectos animate__animated animate__fadeInLeft">
       <h2>Proyectos</h2>
 
       <div className="proyectos__container">

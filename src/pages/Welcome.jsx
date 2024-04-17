@@ -3,7 +3,7 @@ import Photo from "../img/image.png";
 
 export const Welcome = () => {
   return (
-    <div id="inicio" className="welcome">
+    <div id="inicio" className="welcome  animate__animated animate__fadeInLeft">
       <div className="welcome__container">
       <h1>Sebastián Patricio Loda</h1>
       <img src={Photo} alt="foto perfil" />

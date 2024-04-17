@@ -12,7 +12,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="nav-principal">
+    <nav className="nav-principal  animate__animated animate__fadeInLeft">
       <button className="btn-nav" onClick={() => handleClick("#inicio")}>
         Inicio
       </button>

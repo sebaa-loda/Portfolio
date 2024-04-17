@@ -2,7 +2,7 @@ import "../scss/pages/contact/_contact.scss";
 
 export const Contact = () => {
   return (
-    <div id="contacto" className="contacto">
+    <div id="contacto" className="contacto animate__animated animate__fadeInLeft">
       <h2>Contactame!</h2>
       <div className="contacto__container">
         <p>

@@ -2,7 +2,7 @@ import "../scss/pages/skills/_skills.scss";
 
 export const Skills = () => {
   return (
-    <div id="skills" className="skills">
+    <div id="skills" className="skills animate__animated animate__fadeInLeft">
       <h2>Tecnologías</h2>
       <div className="skills__iconos">
         <div className="icono">
