@@ -1,16 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { resolve } from 'path';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 import VitePluginSass from 'vite-plugin-sass';
+import { resolve } from 'path';
 
-// https://vitejs.dev/config/
+
 export default defineConfig({
   plugins: [react(), VitePluginSass()],
   css: {
     preprocessorOptions: {
       sass: {
-        additionalData: `@import "${resolve(__dirname, 'src/styles/variables.scss')}";`, // Importa tus variables SCSS
+        additionalData: `@import "${resolve(__dirname, 'src/styles/variables.scss')}";`, 
       },
     },
   },
-})
+});
