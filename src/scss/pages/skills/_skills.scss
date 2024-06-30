@@ -5,9 +5,9 @@
   background-color: #0f171b;
   border-radius: 1.5rem;
   width: 50rem;
-  margin-top: 3rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
   text-align: center;
-
 
   h2 {
     font-size: 4rem;
@@ -21,24 +21,28 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
-    padding: 2rem
+    padding: 2rem;
   }
 
   @include m.desktop {
     width: 100rem;
     padding: 2.5rem 5rem;
 
-    &__iconos{
-      gap: 6rem;
+    &__iconos {
+      gap: 8rem;
     }
   }
 }
 
 .icono {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__html {
     transition-property: transform;
@@ -48,7 +52,7 @@
 
     &:hover {
       fill: #e34c26;
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
   }
 
@@ -56,11 +60,12 @@
     transition-property: transform;
     transition-duration: 600ms;
     height: 7rem;
-    width: 7rem;
+    width: 8rem;
+    margin-bottom: 8px;
 
     &:hover {
       fill: #264de4;
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
   }
 
@@ -72,7 +77,7 @@
 
     &:hover {
       fill: #cc6699;
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
   }
 
@@ -84,7 +89,7 @@
 
     &:hover {
       fill: #f0db4f;
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
   }
 
@@ -96,7 +101,7 @@
 
     &:hover {
       fill: #007acc;
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
   }
 
@@ -107,8 +112,8 @@
     width: 8rem;
 
     &:hover {
-      fill: #61DBFB;
-      transform: scale(1.3);
+      fill: #61dbfb;
+      transform: scale(1.1);
     }
   }
 
@@ -120,7 +125,7 @@
 
     &:hover {
       fill: #764abc;
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
   }
 
@@ -132,7 +137,7 @@
 
     &:hover {
       fill: #303030;
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
   }
 
@@ -144,7 +149,7 @@
 
     &:hover {
       fill: #68a063;
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
   }
 
@@ -156,7 +161,7 @@
 
     &:hover {
       fill: #0064a5;
-      transform: scale(1.3);
+      transform: scale(1.1);
     }
   }
 
@@ -167,8 +172,8 @@
     width: 8rem;
 
     &:hover {
-      fill: #4DB33D;
-      transform: scale(1.3);
+      fill: #4db33d;
+      transform: scale(1.1);
     }
   }
 
@@ -176,21 +181,30 @@
     margin-top: 1.2rem;
   }
 
-  @include m.desktop{
+  @include m.desktop {
     width: 15rem;
     height: 15rem;
 
-    &__html,&__sass,&__js,&__ts,&__react,&__redux,&__exp,&__node,&__post,&__mongo{
-      height: 15rem;
-      width: 15rem;
-    }
-    
-    &__css{
-      height: 15rem;
+    &__html,
+    &__sass,
+    &__js,
+    &__ts,
+    &__react,
+    &__redux,
+    &__exp,
+    &__node,
+    &__post,
+    &__mongo {
+      height: 10rem;
       width: 10rem;
     }
 
-    span{
+    &__css {
+      height: 10rem;
+      width: 9rem;
+    }
+
+    span {
       font-size: 2.5rem;
     }
   }

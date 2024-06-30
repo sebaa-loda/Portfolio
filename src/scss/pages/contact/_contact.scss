@@ -18,7 +18,7 @@
 
   &__container{
     p {
-    color: rgba(236, 238, 239, 0.5764705882);
+    color: v.$grisClaro;
     text-align: left;
     padding: 0 0 0 10rem;
   }
@@ -28,14 +28,14 @@
   }
 
   a:hover {
-    color: rgb(38, 135, 184);
+    color: v.$blanco;
   }
   }
   
 
   @include m.desktop{
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 8rem;
     padding-top: 2rem;
     margin-bottom: 0;
 

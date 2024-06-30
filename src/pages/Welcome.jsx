@@ -9,13 +9,12 @@ export const Welcome = () => {
       <img src={Photo} alt="foto perfil" />
       <h2>Sobre mi</h2>
       <h4 className="welcome__trayectoria">
-        Empecé mi trayectoria profesional como gerente de logistica en una
-        distribuidora de cosmetica. Luego de la pandemia busque ampliarme al
-        mundo virtual. Durante los ultimos 3 años estuve estudiando en modo
+        Empecé mi trayectoria profesional como encargado de logística en una
+        distribuidora de cosmética. Luego de la pandemia nació mi pasión por el desarrollo web. Durante los ultimos 3 años estudié de modo
         autodidacta y trabajando en varios proyectos.
       </h4>
       <h4 className="welcome__actual">
-        Actualmente sigo estudiando y busco ampliar mi campo laboral en el mundo
+        Actualmente sigo formandome y busco ampliar mi campo laboral en el mundo
         del desarrollo web.
       </h4>
       <h4 className="welcome__contacto">

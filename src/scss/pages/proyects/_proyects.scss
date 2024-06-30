@@ -65,19 +65,21 @@
       padding: 1rem;
     }
 
+    
+
     p {
-      color: rgba(236, 238, 239, 0.5764705882);
+      color: v.$grisClaro;
       text-align: start;
       padding: 1rem;
     }
 
     a {
-      color: rgba(39, 113, 150, 0.959);
+      color: rgba(41, 131, 177, 0.959);
       font-size: 2rem;
     }
 
     a:hover {
-      color: rgb(38, 135, 184);
+      color: v.$blanco;
     }
   }
 

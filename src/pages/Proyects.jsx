@@ -28,7 +28,7 @@ export const Proyects = () => {
             tipos, sino que el usuario también puede crear pokemons con
             distintas estadísticas y tipos a gusto.
           </p>
-          <a href="https://github.com/sebaa-loda/pokemon-client">Código</a>
+          <a href="https://github.com/sebaa-loda/pokemon-client">Ver Código</a>
           <img src={layoutPhoto} alt="imagen pokeapi" />
         </div>
 
@@ -42,7 +42,7 @@ export const Proyects = () => {
             calificar a los proveedores y dejar reseñas para compartir sus
             experiencias.
           </p>
-          <a href="https://github.com/EderFornero/Glamour-Glow">Código</a>
+          <a href="https://github.com/EderFornero/Glamour-Glow">Ver Código</a>
           <img src={glamourPhoto} alt="imagen glamour glow" />
         </div>
 
@@ -55,7 +55,7 @@ export const Proyects = () => {
             Además, incluye una página de contacto para interactuar con los
             visitantes.
           </p>
-          <a href="https://github.com/sebaa-loda/Cafeteria-SASS">Código</a>
+          <a href="https://github.com/sebaa-loda/Cafeteria-SASS">Ver Código</a>
           <img src={cafePhoto} alt="imagen cafeteria" />
         </div>
       </div>
