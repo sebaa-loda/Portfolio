@@ -2,9 +2,20 @@ import "../scss/pages/contact/_contact.scss";
 
 export const Contact = () => {
   return (
-    <div id="contacto" className="contacto animate__animated animate__fadeInLeft">
+    <div
+      id="contacto"
+      className="contacto animate__animated animate__fadeInLeft"
+    >
       <h2>Contactame!</h2>
       <div className="contacto__container">
+        <form action="">
+          <input type="text" placeholder="Nombre y Apellido" required />
+
+          <input type="email" placeholder="Correo Electronico" required />
+
+          <input type="text" placeholder="Deja tu mensaje" />
+        </form>
+
         <p>
           Email:
           <a href="mailto:sebasmdq96@hotmail.com"> sebasmdq96@hotmail.com</a>
