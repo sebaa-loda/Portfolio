@@ -14,6 +14,17 @@ body{
   font-size: 1.6rem;
   background-color: #171716;
   color: v.$grisClaro;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+    background-color: v.$light-background;
+    color: v.$light-text;
+}
+
+body.dark {
+    background-color: v.$dark-background;
+    color: v.$dark-text;
 }
 
 p{

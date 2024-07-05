@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #0f171b;
   margin: 3rem 0 5rem 0; 
   width: 50rem;
   text-align: center;
@@ -21,6 +20,11 @@
     color: v.$grisClaro;
     text-align: left;
     padding: 0 0 0 10rem;
+  }
+
+  &__form{
+    font-size: 20rem;
+
   }
 
   a {
@@ -45,25 +49,59 @@
       margin-bottom: 1rem;
     }
 
-    form{
-      display: flex;
-      flex-direction: column;
-      margin-left: 50rem;
-      width: 10rem;
-      justify-content: center;
-      align-items: center;
-
-    }
 
     &__container{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       margin-top: 1rem;
 
       p{
         font-size: 2rem;
       }
     }
+
+    &__enlaces{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.form{
+  .campo{
+    margin-bottom: 2rem;
+     &:last-child{
+      margin-bottom: 0;
+     }
+
+     label{
+      text-transform: uppercase;
+      display: block;
+      font-size: 2.2rem;
+      font-weight: 700;
+     }
+
+     input:not([type="submit"]){
+      width: 100%;
+      padding: 1rem;
+      border: .5rem solid v.$primario;
+     }
+
+     input[type="submit"]{
+      background-color: v.$primario;
+      width: 100%;
+      color: v.$blanco;
+      border: none;
+      padding: 1rem;
+      font-size: 2.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      &:hover{
+        cursor: pointer;
+      }
+     }
   }
 }

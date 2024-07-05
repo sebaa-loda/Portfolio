@@ -1,4 +1,6 @@
 import "../scss/components/navbar/_navbar.scss";
+import ThemeToggle from "../auth/themeToggle"   
+
 
 export const Navbar = () => {
   const handleClick = (target) => {
@@ -28,6 +30,8 @@ export const Navbar = () => {
       <button className="btn-nav" onClick={() => handleClick("#contacto")}>
         Contacto
       </button>
+
+      <ThemeToggle/> 
     </nav>
   );
 };
