@@ -9,7 +9,7 @@ export const Contact = () => {
       <h2>Contactame!</h2>
       <div className="contacto__container">
        {/* <div className="contacto__form"> */}
-        <form action="" className="form">
+        {/* <form action="" className="form">
         <div class="campo">
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" placeholder="Tu Nombre" required/>
@@ -25,7 +25,7 @@ export const Contact = () => {
           <div class="campo">
             <input type="submit" value="enviar"/>
           </div>
-        </form>
+        </form> */}
         {/* </div> */}
         <div className="contacto__enlaces">
         <p>
