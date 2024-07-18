@@ -8,13 +8,13 @@ export const Contact = () => {
     >
       <h2>Contactame!</h2>
       <div className="contacto__container">
-        <form action="">
+        {/* <form action="">
           <input type="text" placeholder="Nombre y Apellido" required />
 
           <input type="email" placeholder="Correo Electronico" required />
 
           <input type="text" placeholder="Deja tu mensaje" />
-        </form>
+        </form> */}
 
         <p>
           Email:
