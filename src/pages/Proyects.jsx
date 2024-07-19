@@ -54,6 +54,8 @@ export const Proyects = () => {
             variedades y métodos de preparación hasta la historia del café.
             Además, incluye una página de contacto para interactuar con los
             visitantes.
+            <br />
+            <br />
           </p>
           <a href="https://github.com/sebaa-loda/Cafeteria-SASS">Ver Código</a>
           <img src={cafePhoto} alt="imagen cafeteria" />
