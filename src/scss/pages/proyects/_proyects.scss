@@ -86,8 +86,8 @@
   @include m.desktop {
     display: flex;
     background-color: #0f171b;
-    border-radius: 1.5rem;
-    width: 100rem;
+    border-radius: 0;
+    width: 100%;
     position: relative;
     margin-top: 5rem;
     h2 {
@@ -103,6 +103,20 @@
       font-size: 1.8rem
     }
 
+    &__container{
+      display: flex;
+      flex-direction: row;
+      margin: 0 2rem;
+      gap: 2rem;
+      padding-bottom: 5rem;
+
+      img{
+        width: 50rem;
+        height: 30rem;
+        margin: 0 auto;
+      }
+    }
+
   }
 }
 
@@ -110,5 +124,11 @@
   border-top: 0.2px solid v.$grisClaro;
   margin-top: 2rem;
   padding-top: 3rem;
+
+  @include m.desktop {
+    border: 0.2px solid v.$grisClaro;
+    border-radius: 2%;
+
+  }
 
 }

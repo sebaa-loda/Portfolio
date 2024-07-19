@@ -1,4 +1,4 @@
-import layoutPhoto from "../img/layout.png";
+import pokePhoto from "../img/pokeapi.png";
 import glamourPhoto from "../img/glamour.png";
 import cafePhoto from "../img/cafeteria.png";
 import '../scss/pages/proyects/_proyects.scss'
@@ -29,7 +29,7 @@ export const Proyects = () => {
             distintas estadísticas y tipos a gusto.
           </p>
           <a href="https://github.com/sebaa-loda/pokemon-client">Ver Código</a>
-          <img src={layoutPhoto} alt="imagen pokeapi" />
+          <img src={pokePhoto} alt="imagen pokeapi" />
         </div>
 
         <div className="proyecto">

@@ -1,39 +1,67 @@
 @use "variables" as v;
 
-html{
+html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-body{
+
+body {
   font-family: v.$fuenteSecundaria;
   font-size: 1.6rem;
   background-color: #171716;
   color: v.$grisClaro;
+  transition: 0.6s;
 }
 
-p{
+body.light {
+  background-color: v.$light-background;
+
+}
+
+body.dark {
+  background: linear-gradient(334deg, #37234e, #140327, #066168);
+  animation: gradient-animation 3s ease infinite; 
+  background-size: 200% 200%;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+p {
   color: v.$negro;
   font-size: 1.6rem;
   line-height: 2;
+  transition: color 0.3s; 
 }
 
-.contenedor{
+.contenedor {
   width: 95%;
   max-width: 120rem;
   margin: 0 auto;
+  transition: background-color 0.3s;
 }
 
-a{
+a {
   text-decoration: none;
   color: v.$negro;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
   display: block;

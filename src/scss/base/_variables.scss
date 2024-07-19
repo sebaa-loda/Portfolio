@@ -1,8 +1,6 @@
-// Fuentes
-$fuentePrincipal: "Railwey" , sans-serif;
-$fuenteSecundaria: "Roboto" , sans-serif;
-$fuenteCursiva: "Bona Nova" , serif;
-
+$fuentePrincipal: 'Poppins', sans-serif;
+$fuenteSecundaria: 'Poppins', sans-serif;
+$fuenteCursiva: 'Poppins', sans-serif;
 // media queries
 $telefono: 480px;
 $desktop: 800px;
@@ -13,6 +11,11 @@ $secundario: #1db9d4;
 $negro: #000000;
 $blanco: #FFFFFF;
 $grisClaro: #eceeefe5;
+
+$light-background: #ffffff;
+$light-text: #000000;
+$dark-background: #171716;
+$dark-text: #ffffff;
 
 //unidades
 $separacion: 5rem;

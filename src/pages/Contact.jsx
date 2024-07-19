@@ -8,14 +8,26 @@ export const Contact = () => {
     >
       <h2>Contactame!</h2>
       <div className="contacto__container">
-        {/* <form action="">
-          <input type="text" placeholder="Nombre y Apellido" required />
-
-          <input type="email" placeholder="Correo Electronico" required />
-
-          <input type="text" placeholder="Deja tu mensaje" />
+       {/* <div className="contacto__form"> */}
+        {/* <form action="" className="form">
+        <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Tu Nombre" required/>
+          </div>
+          <div class="campo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Tu Email" required/>
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <input type="text" id="mensaje" placeholder="Tu Mensaje" required/>
+          </div>
+          <div class="campo">
+            <input type="submit" value="enviar"/>
+          </div>
         </form> */}
-
+        {/* </div> */}
+        <div className="contacto__enlaces">
         <p>
           Email:
           <a href="mailto:sebasmdq96@hotmail.com"> sebasmdq96@hotmail.com</a>
@@ -31,6 +43,7 @@ export const Contact = () => {
             www.linkedin.com/in/sebastian-loda
           </a>
         </p>
+        </div>
       </div>
     </div>
   );
